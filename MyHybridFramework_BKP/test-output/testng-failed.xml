@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utilities.MyListenersClass"/>
+  </listeners>
+  <test thread-count="5" name="LoginTests(failed)">
+    <classes>
+      <class name="TestCases.FacebookTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="TC01_FBLogin" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- TestCases.FacebookTest -->
+      <class name="TestCases.LoginTestWithMultipleData">
+        <methods>
+          <include name="TC11" invocation-numbers="1"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- TestCases.LoginTestWithMultipleData -->
+    </classes>
+  </test> <!-- LoginTests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
