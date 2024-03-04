@@ -117,7 +117,7 @@ public class BaseClass
 		
 		ts=(TakesScreenshot)driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		File trg=new File("C://Users//Admin//eclipse-workspace//MyHybridFramework_BKP//Screenshots//"+subFolderForScreenshots+"//"+name+".jpg");
+		File trg=new File("C://Users//Admin//git//HybridFramework_2024//HybridFramework_2024//MyHybridFramework_BKP//Screenshots//"+subFolderForScreenshots+"//"+name+".jpg");
 		String path=trg.getAbsolutePath();
 		//System.out.println(path);
 		FileUtils.copyFile(src, trg);
